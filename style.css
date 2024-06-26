@@ -51,11 +51,13 @@ body{
 .headerbox h1{
   font-size: 1.6rem;
   font-weight: var(--fw-light-200);
+  color: var(--cc-VeryDarkBlue);
 }
 
 .headerbox h2{
   font-size: 1.6rem;
   margin-bottom: 10px;
+  color: var(--cc-VeryDarkBlue);
 }
 
 .headerbox-details{
@@ -100,7 +102,7 @@ body{
 */
 
 .card-details{
-  padding: 20px;
+  padding: 25px;
   border-radius: 5px;
   box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
 }
@@ -109,10 +111,12 @@ body{
   margin-bottom: 10px;
   font-size: 1.4rem;
   font-weight: var(--fw-bold-600);
+  color: var(--cc-VeryDarkBlue);
 }
 
 .card-details p{
   margin-bottom: 40px;
+  font-weight: var(--fw-normal-400);
   color: var(--cc-GrayishBlue);
 }
 
