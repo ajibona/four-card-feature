@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+
+    /* font style */
+    --fw-light-200: 200;
+    --fw-normal-400: 400;
+    --fw-bold-600: 600;
+
+    --ff-size: 1rem;
+    --ff-light: 0.8rem;
+
+    /* -- Fonts Family -- */
+    --ff-font-family-poppins: "Poppins", sans-serif;
+
+
+    /* color style */
+    --cc-Red: hsl(0, 78%, 62%);
+    --cc-Cyan: hsl(180, 62%, 55%);
+    --cc-Orange: hsl(34, 97%, 64%);
+    --cc-Blue: hsl(212, 86%, 64%);
+
+    --cc-VeryDarkBlue: hsl(234, 12%, 34%);
+    --cc-GrayishBlue: hsl(229, 6%, 66%);
+    --cc-VeryLightGray: hsl(0, 0%, 98%);
+
+}
+
+body{
+    background-color: var(--cc-VeryLightGray);
+    font-family: var(--ff-font-family-poppins);
+    background-color: var(--cc-VeryLightGray);
+}
+
+.headerbox, header{
+  width: 100%;
+  text-align: center;
+  margin: 80px 0 70px 0;
+}
+
+.headerbox h1{
+  font-size: 1.6rem;
+  font-weight: var(--fw-light-200);
+}
+
+.headerbox h2{
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.headerbox-details{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerbox-details p{
+  width: 320px;
+  font-weight: var(--fw-normal-400);
+  color: var(--cc-GrayishBlue);
+}
+
+.layout-card{
+  margin: 0 30px;
+  margin-bottom: 30px;
+}
+
+.cardbox, .cardblock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-float{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*
+.card-column{
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+*/
+
+.card-details{
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-details h3{
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: var(--fw-bold-600);
+}
+
+.card-details p{
+  margin-bottom: 40px;
+  color: var(--cc-GrayishBlue);
+}
+
+.box1{
+  border-top: 6px solid var(--cc-Cyan);
+}
+
+.box2{
+  border-top: 6px solid var(--cc-Red);
+}
+
+.box3{
+  border-top: 6px solid var(--cc-Orange);
+}
+
+.box4{
+  border-top: 6px solid var(--cc-Blue);
+}
+
+
+/* Desktop View */
+@media screen and (min-width: 750px) {
+  .cardbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .card-details{
+    max-width: 330px;
+  }
+
+  .card-details h3{
+    font-size: 1.2rem;
+  }
+
+  .card-details p{
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+
+  .headerbox, header{
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .headerbox h1{
+    font-size: 2.1rem;
+  }
+
+  .headerbox h2{
+    font-size: 2.1rem;
+  }
+
+  .headerbox-details p{
+    width: 440px;
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+}
